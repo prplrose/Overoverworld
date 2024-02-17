@@ -1,22 +1,7 @@
 package com.github.prplrose.overoverworld.mixin;
 
-import com.github.prplrose.overoverworld.OverOverworld;
-import com.llamalad7.mixinextras.sugar.Local;
-import com.llamalad7.mixinextras.sugar.ref.LocalRef;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.WanderingTraderManager;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Mixin(WanderingTraderManager.class)
 public class WanderingTraderMixin {
@@ -37,7 +22,7 @@ public class WanderingTraderMixin {
         return player;
     }*/
 
-   @Inject(method = "spawn", at = @At(value = "RETURN", ordinal = 4))
+   /*@Inject(method = "spawn", at = @At(value = "RETURN", ordinal = 4))
     void debug1(ServerWorld world, boolean spawnMonsters, boolean spawnAnimals, CallbackInfoReturnable<Integer> cir){
 
         OverOverworld.LOGGER.info("Trader spawn attempt in: " + world.getRegistryKey().getValue() + " unlucky rng ");
@@ -79,5 +64,5 @@ public class WanderingTraderMixin {
     @Inject(method = "trySpawn", at = @At(value = "RETURN", ordinal = 4))
     void debug6(ServerWorld world, CallbackInfoReturnable<Boolean> cir){
         OverOverworld.LOGGER.info("Attempted spawn in: " + world.getRegistryKey().getValue() + " and failed: no valid spawn position");
-    }
+    }*/
 }
