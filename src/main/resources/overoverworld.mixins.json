@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.prplrose.overoverworld.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CustomPortalBlockMixin",
+    "ServerWorldConstructionMixin",
+    "WanderingTraderMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

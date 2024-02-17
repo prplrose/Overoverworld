@@ -1,0 +1,19 @@
+{
+  "type": "overoverworld:overoverworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "overoverworld:sky",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+      ],
+      "structure_overrides": [
+      ]
+    }
+  }
+}

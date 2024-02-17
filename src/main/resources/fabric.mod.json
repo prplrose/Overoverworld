@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "overoverworld",
+  "version": "${version}",
+  "name": "Overoverworld",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/overoverworld/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.prplrose.overoverworld.OverOverworld"
+    ]
+  },
+  "mixins": [
+    "overoverworld.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/kyrptonaught/customportalapi/CustomPortalBlock": ["eu/pb4/polymer/core/api/block/PolymerBlock"]
+    }
+  }
+}

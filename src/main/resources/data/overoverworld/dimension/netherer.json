@@ -1,0 +1,16 @@
+{
+  "type": "overoverworld:netherer",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "overoverworld:hedoublehokeysticks",
+      "lakes": false,
+      "features": true,
+      "layers": [],
+      "structure_overrides": [
+        "overoverworld:wither_skeleton_spawner",
+        "overoverworld:end_portal"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "overoverworld:end_portal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "salt": 1941535814,
+    "distance": 8,
+    "spread": 3,
+    "count": 128,
+    "preferred_biomes": [
+      "overoverworld:hedoublehokeysticks"
+    ]
+  }
+}

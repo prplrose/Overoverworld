@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "overoverworld:hedoublehokeysticks"
+  ],
+  "step": "raw_generation",
+  "spawn_overrides": {},
+  "start_pool": "overoverworld:end_portal",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 16
+    },
+    "max_inclusive": {
+      "absolute": 128
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

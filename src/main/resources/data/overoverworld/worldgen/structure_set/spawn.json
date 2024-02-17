@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "overoverworld:spawn",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "salt": 1562161004,
+    "distance": 0,
+    "spread": 0,
+    "count": 1,
+    "preferred_biomes": [
+      "overoverworld:sky"
+    ]
+  }
+}

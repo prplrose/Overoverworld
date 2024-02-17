@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "overoverworld:wither_skeleton_spawner",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 2055091956,
+    "spacing": 16,
+    "separation": 0
+  }
+}
