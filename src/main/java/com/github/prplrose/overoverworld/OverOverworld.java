@@ -28,7 +28,8 @@ public class OverOverworld implements ModInitializer {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(Blocks.PURPUR_BLOCK)
                 .lightWithItem(Items.FEATHER)
-                .destDimID(OVEROVERWORLD_ID)
+                .returnDim(new Identifier("nether"), true)
+                .destDimID(new Identifier(MODID, "netherer"))
                 .tintColor(234, 183, 8)
                 .registerPortal();
 
