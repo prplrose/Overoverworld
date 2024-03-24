@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "CustomPortalBlockMixin",
-    "ServerWorldConstructionMixin",
-    "WanderingTraderMixin"
+    "MinecraftServerMixin"
   ],
   "client": [
   ],

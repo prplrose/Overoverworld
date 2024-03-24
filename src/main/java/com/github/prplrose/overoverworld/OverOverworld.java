@@ -18,6 +18,8 @@ import java.util.Optional;
 
 public class OverOverworld implements ModInitializer {
 
+    public static IndependentLevelProperties OVEROVERWORLD_PROPERTIES;
+
     public static final String MODID = "overoverworld";
     public static final Identifier OVEROVERWORLD_ID = new Identifier(MODID, MODID);
     public static final Logger LOGGER = LoggerFactory.getLogger("Overoverworld");
@@ -48,7 +50,7 @@ public class OverOverworld implements ModInitializer {
         ServerWorldEvents.LOAD.register((server, world) -> {
             if (!world.getRegistryKey().getValue().equals(OVEROVERWORLD_ID))
                 return;
-            if (StateSaverAndLoader.getServerState(world).isOveroverworldSpawnGenerated)
+            if (StateSaverAndLoader.getServerState(server.getOverworld()).isOveroverworldSpawnGenerated)
                 return;
 
             Optional<StructureTemplate> spawnStructure = world.getServer().getStructureTemplateManager().getTemplate(new Identifier(MODID, "spawn"));
@@ -57,7 +59,7 @@ public class OverOverworld implements ModInitializer {
             BlockPos spawnPos = new BlockPos(-5,61,-6);
             spawnStructure.get().place(world, spawnPos, spawnPos, new StructurePlacementData(), world.getRandom(), 0);
             world.setBlockState(spawnPos.add(5,3,6), Blocks.AIR.getDefaultState());
-            StateSaverAndLoader.getServerState(world).isOveroverworldSpawnGenerated = true;
+            StateSaverAndLoader.getServerState(server.getOverworld()).isOveroverworldSpawnGenerated = true;
             LOGGER.info("Generated spawn in " + world.getRegistryKey().getValue());
         });
 
